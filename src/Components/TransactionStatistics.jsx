@@ -18,7 +18,7 @@ const TransactionStatistics = ({ month }) => {
   const fetchStatistics = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/sales?month=${month}`
+        `https://roxiler-be.onrender.com/api/products/sales?month=${month}`
       );
       setStatistics(response.data);
     } catch (error) {

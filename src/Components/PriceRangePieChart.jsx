@@ -30,7 +30,7 @@ const PieCategoryChart = ({ month }) => {
   const fetchCategoryData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/category?month=${month}`
+        `https://roxiler-be.onrender.com/api/products/category?month=${month}`
       );
       const data = response.data;
 

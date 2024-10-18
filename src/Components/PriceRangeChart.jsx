@@ -52,7 +52,7 @@ const PriceRangeChart = ({ month }) => {
   const fetchPriceRangeData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/products/bar-chart?month=${month}`
+        `https://roxiler-be.onrender.com/api/products/bar-chart?month=${month}`
       );
       const data = response.data; // Assuming this is the correct format
 
